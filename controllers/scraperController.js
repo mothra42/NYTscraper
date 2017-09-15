@@ -7,7 +7,7 @@ var Article = require("../models/Article.js");
 var mongoose = require("mongoose");
 mongoose.Promise = Promise;
 
-mongoose.connect("mongodb://localhost/NYTScraper");
+mongoose.connect("mongodb://heroku_xn5cdw13:ni650cr164oofqvmjvj6qql8j0@ds137197.mlab.com:37197/heroku_xn5cdw13");
 var db = mongoose.connection;
 
 db.on("error", function(error) {
