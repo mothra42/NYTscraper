@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="app.js" type="text/javascript"></script>
+  <title>NYT Scraper</title>
+</head>
+<body>
+  <div class="container" id="main">
+    <div class="row">
+      <div class="col s12">
+        <div class="car blue-grey darken-1">
+          <div class="card-content white-text">
+            <div class="card-title center-align">
+              <h1>NYT Scraper</h1>
+            </div>
+          </div>
+          <div class="card-action">
+            <button class="btn home">Home</button>
+            <button class="btn saved">Saved Articles</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2 articles">
+        <!-- Articles go here -->
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="savedArticles">
+    <div class="row">
+      <div class="col s12">
+        <div class="car blue-grey darken-1">
+          <div class="card-content white-text">
+            <div class="card-title center-align">
+              <h1>Saved Articles</h1>
+            </div>
+          </div>
+          <div class="card-action">
+            <button class="btn home">Home</button>
+            <button class="btn saved">Saved Articles</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2" id="savedStuff">
+        <!-- Articles go here -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="addComment" class="modal">
+  <div class="modal-content">
+    <!-- title -->
+    <div class="row">
+    <div class="input-field col s6">
+      <input  id="title" type="text">
+      <label class="active" for="title">Title</label>
+    </div>
+    <!-- text input -->
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="body" class="materialize-textarea"></textarea>
+            <label for="body">Comment</label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="modal-footer" id="addbtn">
+    <!-- button goes here -->
+  </div>
+</div>
+
+  <div id="viewComment" class="modal">
+    <div class="modal-content" id="commentArea">
+      <!-- comments go here -->
+    </div>
+    <div class="modal-footer">
+      <button class="modal-action modal-close waves-effect waves-green btn-flat">close</button>
+    </div>
+  </div>
+</body>
+</html>
